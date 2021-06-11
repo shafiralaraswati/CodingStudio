@@ -1,0 +1,7 @@
+SELECT * 
+FROM Staff
+ORDER BY StaffSalary ASC
+
+SELECT * 
+FROM Staff
+ORDER BY StaffName DESC

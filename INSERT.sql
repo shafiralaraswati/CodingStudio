@@ -1,0 +1,24 @@
+--INSERT--
+SELECT * FROM Customer
+
+BEGIN TRANSACTION
+INSERT INTO Customer VALUES
+('CU006', 'Alex', 'Male', '123456789', 'Jalan Bunga')
+COMMIT
+
+BEGIN TRANSACTION
+INSERT INTO Customer (CustomerID, CustomerName) VALUES
+('CU007','Alexa')
+ROLLBACK
+
+BEGIN TRANSACTION
+INSERT INTO Customer VALUES 
+('CU008', 'Putri', 'Female', '056547594', 'Jalan Cagak')
+COMMIT
+
+BEGIN TRANSACTION
+INSERT INTO Customer VALUES
+('CU009','Raka', 'Male','090909','Jalan Melati')
+COMMIT
+
+
